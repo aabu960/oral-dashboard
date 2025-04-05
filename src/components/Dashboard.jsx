@@ -12,7 +12,7 @@ import {
   LineElement,
 } from "chart.js";
 import { Bar, Line } from "react-chartjs-2";
-
+import Sidebar from "./Sidebar";
 // Register Chart.js components
 ChartJS.register(
   CategoryScale,
@@ -83,6 +83,7 @@ const Dashboard = () => {
 
   return (
     <div className="flex h-screen">
+      <Sidebar />
       {/* Content Section */}
       <div className="p-6 bg-light-gray flex-1">
         {/* Page Title */}
