@@ -21,7 +21,7 @@ const App = () => {
         <main className="flex-1 p-4">
           <Routes>
             {/* Public Routes */}
-            <Route path="/" element={<AuthForm />} />
+            <Route path="/login" element={<AuthForm />} />
             <Route path="/forgot-password" element={<ForgotPassword />} />
             <Route path="/unauthorized" element={<Unauthorized />} />
 
@@ -37,7 +37,7 @@ const App = () => {
             </Route>
 
             {/* Any other routes */}
-            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/" element={<Dashboard />} />
             <Route path="/customers" element={<Customers />} />
             <Route path="/products" element={<Products />} />
             <Route path="/employees" element={<Employees />} />
