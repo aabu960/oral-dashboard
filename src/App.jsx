@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Sidebar from "./components/Sidebar.jsx"; // Example component
+// import Sidebar from "./components/Sidebar.jsx"; // Example component
 import Dashboard from "./components/Dashboard.jsx"; // Example component
 import Customers from "./pages/Customers.jsx"; // Example page
 import Products from "./pages/Products.jsx"; // Example page
@@ -13,7 +13,9 @@ import ProtectedRoute from "./components/ProtectedRoute"; // Your ProtectedRoute
 import Unauthorized from "./pages/Unauthorized.jsx"; // Unauthorized page
 import UserDashboard from "./pages/UserDashboard.jsx"; // User Dashboard page
 import AdminDashboard from "./pages/AdminDashboard.jsx"; // Admin Dashboard page
-
+// import TexTextHighlight from "./components/TextHighlight.jsx"
+import FaceDetection from "./components/FaceDetection.jsx";
+import Facedetect from "./pages/facedetect.jsx";
 const App = () => {
   return (
     <Router>
@@ -38,6 +40,9 @@ const App = () => {
 
             {/* Any other routes */}
             <Route path="/" element={<Dashboard />} />
+            <Route path="/facedetect" element={<Facedetect />} />
+            <Route path="/facedetection" element={<FaceDetection />} />
+
             <Route path="/customers" element={<Customers />} />
             <Route path="/products" element={<Products />} />
             <Route path="/employees" element={<Employees />} />
