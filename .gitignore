@@ -7,6 +7,43 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
+# Dependency directories
+node_modules/
 
+# Build output
+dist/
+build/
 
+# Vite cache
+.vite/
+
+# Environment variables
+.env
+.env.*.local
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# IDEs & Editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Misc
+coverage/
+*.tgz
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Git folder settings
+.git/
+
+# Optional: OS-generated files
+*.swp
+*.bak
+*.tmp
