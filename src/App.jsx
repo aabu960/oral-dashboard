@@ -16,6 +16,8 @@ import AdminDashboard from "./pages/AdminDashboard.jsx"; // Admin Dashboard page
 // import TexTextHighlight from "./components/TextHighlight.jsx"
 import FaceDetection from "./components/FaceDetection.jsx";
 import Facedetect from "./pages/facedetect.jsx";
+import SpeechToText from "./components/SpeechToText.jsx";
+
 const App = () => {
   return (
     <Router>
@@ -26,6 +28,7 @@ const App = () => {
             <Route path="/login" element={<AuthForm />} />
             <Route path="/forgot-password" element={<ForgotPassword />} />
             <Route path="/unauthorized" element={<Unauthorized />} />
+            <Route path="/speechtotext" element={<SpeechToText />} />
 
             {/* Protected Routes */}
             {/* Protect User Dashboard */}
